@@ -18,10 +18,14 @@ echo("<br>La multiplicacion de:".$numero1."*".$numero2."=".$multiplicacion);
 echo("<br>La divicion de:".$numero1."/".$numero2."=".$divicion);
 
 echo ("<br><br>Ejercicio 2 <br>");
-$altura=1.78
-$peso=85
+$altura=1.78;
+$peso=85;
+$imc=($altura*$altura)/2;
 
-
+if($imc<= 18.4)
+{
+echo("<br> IMC =$imc.Insuficiencia de peso");
+}
 
 
 ?>
