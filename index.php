@@ -20,12 +20,20 @@ echo("<br>La divicion de:".$numero1."/".$numero2."=".$divicion);
 echo ("<br><br>Ejercicio 2 <br>");
 $altura=1.78;
 $peso=85;
-$imc=($altura*$altura)/2;
+$imc=$peso/($altura*$altura);
+
 
 if($imc<= 18.4)
 {
-echo("<br> IMC =$imc.Insuficiencia de peso");
+echo("<br> IMC.$imc =Insuficiencia de peso");
 }
 
-
+elseif(25<=$imc || 29.9 <= $imc ){
+    echo("<br> IMC.$imc =Sobre Peso");  
+}
+elseif(18.5<=$imc || 24.9 <= $imc ){
+    echo("<br> IMC.$imc =Peso Normal"); 
+}
+  
+   
 ?>
