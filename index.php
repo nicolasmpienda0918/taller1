@@ -22,17 +22,20 @@ $altura=1.78;
 $peso=85;
 $imc=$peso/($altura*$altura);
 
+echo("Señor Usuario su Estatura es de :".$altura."m y su peso es de:".$peso."kg");
+
+
 
 if($imc<= 18.4)
 {
-echo("<br> IMC.$imc =Insuficiencia de peso");
+echo("<br>  Su indice de masa corporal es de.$imc por lo tanto tienes insuficiencia de peso");
 }
 
 elseif(25<=$imc || 29.9 <= $imc ){
-    echo("<br> IMC.$imc =Sobre Peso");  
+    echo("<br>  Su indice de masa corporal es de $imc por lo tanto tienes sobrepeso");  
 }
 elseif(18.5<=$imc || 24.9 <= $imc ){
-    echo("<br> IMC.$imc =Peso Normal"); 
+    echo("<br>  Su indice de masa corporal es de$imc por lo tanto su Peso Normal"); 
 }
   
    
